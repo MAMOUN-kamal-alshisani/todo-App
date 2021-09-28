@@ -4,6 +4,9 @@ import List from './list/list'
 import Forms from './form/form'
 import { v4 as uuid } from 'uuid';
 import Pagination from "./pagination/pagination";
+import LoginProvider from '../components/context/context';
+import Auth from '../components/auth/auth';
+
 // import Forms from '../components/form/'
 import './todo.css'
 import { Button, Form , Row, Col, Container, Modal,InputGroup, Card} from 'react-bootstrap';
@@ -57,6 +60,7 @@ function ToDo  () {
   return (
    
    <>
+     <Auth capability="read">
    <div>
       <Forms addItem={addItem} />
       </div>
@@ -70,6 +74,7 @@ function ToDo  () {
         totalCards={list.length}
         paginate={paginate}
       />
+      </Auth>
 </>
 
   );

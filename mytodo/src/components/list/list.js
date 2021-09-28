@@ -4,6 +4,7 @@ import useForm from '../../hooks/form';
 import ToDo from '../toDO';
 import { v4 as uuid } from 'uuid';
 import { Button, Form , Row, Col, Container, Modal,InputGroup, Card} from 'react-bootstrap';
+import './list.css'
 // const [list, setList] = ToDo([]);
 // const { deleteItem, toggleComplete,list } = ToDo(addItem);
 function List(props){
@@ -25,7 +26,7 @@ return(
           <Button onClick={() => props.toggleComplete(item.id)}>Complete: {item.complete ? "completed" : "pending" }</Button>
           <Button onClick={() => props.deleteItem(item.id)}>delete </Button>
           
-          <hr />
+          {/* <hr /> */}
         </span>
           
         
