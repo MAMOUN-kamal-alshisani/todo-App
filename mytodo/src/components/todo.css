@@ -1,0 +1,50 @@
+.model{
+
+border: wheat;
+
+
+}
+
+.button1{
+
+   background-color: rgb(83, 83, 240);
+   color: white;
+   width: 70px;
+   height: 30px;
+   position: relative;
+   margin-top:30px;
+   margin-left: 30px;
+}
+.model input[type="text" i] {
+
+width: 200px;
+height: 30px;
+margin-left: 30px;
+}
+
+Form{
+width: 300px;
+border: 1px rgb(155, 149, 149) solid;
+height:400px;
+
+}
+
+Form label{
+    /* margin-left: 30px; */
+    margin-top:40px;
+
+    
+}
+
+h2{
+
+    margin-left: 30px;
+
+}
+
+
+.difficulty{
+
+    margin-left: 30px;
+width: 200px;
+}
